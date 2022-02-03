@@ -9,24 +9,24 @@ RSS Asyncio Proxy
 .. image:: https://img.shields.io/travis/mamico/rss_asyncio_proxy.svg
         :target: https://travis-ci.com/mamico/rss_asyncio_proxy
 
-.. image:: https://readthedocs.org/projects/rss-asyncio-proxy/badge/?version=latest
-        :target: https://rss-asyncio-proxy.readthedocs.io/en/latest/?version=latest
-        :alt: Documentation Status
-
-
 
 
 Python Boilerplate contains all the boilerplate you need to create a Python package.
 
 
 * Free software: MIT license
-* Documentation: https://rss-asyncio-proxy.readthedocs.io.
 
 
 Features
 --------
 
-Run:
+Run memory cache:
+
+```
+% bin/rss_asyncio_proxy --port 8002
+```
+
+Run redis cache:
 
 ```
 % bin/rss_asyncio_proxy --port 8002 --redis redis://127.0.0.1:6379/?db=0
